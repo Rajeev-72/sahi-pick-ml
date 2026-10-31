@@ -1,0 +1,51 @@
+{
+  "health": {
+    "rows_train": 33630,
+    "rows_test": 8408,
+    "MAE_points": 1.21,
+    "R2": 0.968,
+    "grade_accuracy": 0.788,
+    "grade_within_1": 0.987,
+    "baseline_MAE_points": 8.38
+  },
+  "nova": {
+    "rows_train": 22617,
+    "rows_test": 5655,
+    "n_features": 260,
+    "accuracy": 0.844,
+    "macro_F1": 0.851,
+    "majority_baseline_accuracy": 0.57,
+    "class_balance": {
+      "1": 0.133,
+      "2": 0.069,
+      "3": 0.228,
+      "4": 0.57
+    },
+    "confusion_matrix_rows_true_1to4": [
+      [
+        666,
+        2,
+        50,
+        36
+      ],
+      [
+        5,
+        381,
+        1,
+        1
+      ],
+      [
+        61,
+        0,
+        848,
+        382
+      ],
+      [
+        83,
+        9,
+        252,
+        2878
+      ]
+    ]
+  }
+}

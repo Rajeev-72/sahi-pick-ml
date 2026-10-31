@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#fff9ef">
+<title>Sahi Pick · Pick the better one</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#view">Skip to content</a>
+
+<div class="page">
+
+  <!-- App shell: stays on screen, only <main> changes between pages -->
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <span class="brand-mark" id="logo"></span>
+      <span>Sahi Pick</span>
+    </a>
+
+    <nav class="nav" aria-label="Main" id="nav">
+      <a href="#/"        data-nav="home"><i data-i="home"></i> Home</a>
+      <a href="#/search"  data-nav="search"><i data-i="search"></i> Search</a>
+      <a href="#/scan"    data-nav="scan"><i data-i="scan"></i> Scan</a>
+      <a href="#/compare" data-nav="compare"><i data-i="compare"></i> Compare</a>
+      <a href="#/basket"  data-nav="basket"><i data-i="basket"></i> Basket <span class="count" hidden>0</span></a>
+      <a href="#/profile" data-nav="profile"><i data-i="user"></i> Me</a>
+    </nav>
+  </header>
+
+  <!-- Each route renders in here -->
+  <main id="view" tabindex="-1"></main>
+
+  <footer>
+    <p>Data comes from Open Food Facts, contributed by volunteers, and is thinner for Indian products. Always check the pack for allergens and exact values. Ratings are general guidance, not medical advice.</p>
+    <p class="foot-links"><a href="#/about">How it works</a> · <a href="#/coverage">Kitchen test</a> · <a href="#/barcode">Type a barcode</a></p>
+  </footer>
+</div>
+
+<noscript><p style="padding:1rem">Sahi Pick needs JavaScript to look up foods.</p></noscript>
+
+<!-- Plain scripts (no modules) so the site also works when opened from a file -->
+<script src="js/utils.js"></script>
+<script src="js/store.js"></script>
+<script src="js/fresh.js"></script>
+<script src="js/model-data.js"></script>
+<script src="js/score.js"></script>
+<script src="js/ml.js"></script>
+<script src="js/api.js"></script>
+<script src="js/router.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/pages2.js"></script>
+<script src="js/scan.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
